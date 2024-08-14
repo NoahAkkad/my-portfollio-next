@@ -17,12 +17,12 @@ const Hero: React.FC = () => {
 
           {/* CTA Buttons */}
           <div className="flex justify-center space-x-4">
-            <Link href="#portfolio" scroll={false}>
+            <Link href="#portfolio" scroll={false} legacyBehavior>
               <a className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg text-lg">
                 View My Work
               </a>
             </Link>
-            <Link href="#cv" scroll={false}>
+            <Link href="#cv" scroll={false} legacyBehavior>
               <a className="bg-transparent border border-white hover:bg-white hover:text-gray-900 py-3 px-6 rounded-lg text-lg">
                 Download CV
               </a>
