@@ -8,8 +8,18 @@ export default function Home() {
     <>
       <Headers />
       <Hero />
-      <ProjectCard title={"My Portfollio"} description={"fagsdfasd"} image={"/images/A.jpg"} link={""} />
-      <ProjectCard title={"My Portfollio"} description={"fagsdfasd"} image={"/images/A.jpg"} link={""} />
+      <ProjectCard
+        title={"My Portfollio"}
+        description={"fagsdfasd"}
+        image={"/images/A.jpg"}
+        link={"https://noahakkad.github.io/CHE-GUEVARA-DOCUMENTARY/"}
+      />
+      <ProjectCard
+        title={"My Portfollio"}
+        description={"fagsdfasd"}
+        image={"/images/A.jpg"}
+        link={""}
+      />
     </>
   );
 }
