@@ -4,7 +4,6 @@ import Portfolio from '../../components/Portfolio';
 const PortfolioPage: React.FC = () => {
     return (
         <div>
-            <h1>Portfolio Page</h1>
             <Portfolio />
         </div>
     );

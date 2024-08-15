@@ -4,7 +4,6 @@ import Contact from '../../components/Contact';
 const ContactPage: React.FC = () => {
     return (
         <div>
-            <h1>Contact Page</h1>
             <Contact />
         </div>
     );

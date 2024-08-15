@@ -1,4 +1,7 @@
 import React from "react";
+import { personalDetails } from "../utils/data";
+
+const { resumeLink } = personalDetails;
 
 const CV: React.FC = () => {
   return (
@@ -16,14 +19,14 @@ const CV: React.FC = () => {
           </p>
           <div className="flex justify-center space-x-4">
             <a
-              href="/files/Noah_Akkad_CV_English.pdf"
+              href={resumeLink.english}
               download
               className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200"
             >
               Download CV (English)
             </a>
             <a
-              href="/files/Noah_Akkad_CV_Swedish.pdf"
+              href={resumeLink.swedish}
               download
               className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200"
             >

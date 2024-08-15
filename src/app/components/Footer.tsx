@@ -1,4 +1,7 @@
 import React from "react";
+import { personalDetails } from "../utils/data";
+
+const { socialLinks } = personalDetails;
 
 const Footer: React.FC = () => {
   return (
@@ -9,7 +12,7 @@ const Footer: React.FC = () => {
         </p>
         <div className="mt-4">
           <a
-            href="https://github.com/your-github-username"
+            href={socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
             className="mx-2 text-gray-400 hover:text-white transition duration-200"
@@ -17,7 +20,7 @@ const Footer: React.FC = () => {
             GitHub
           </a>
           <a
-            href="https://www.linkedin.com/in/your-linkedin-username/"
+            href={socialLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="mx-2 text-gray-400 hover:text-white transition duration-200"
@@ -25,10 +28,11 @@ const Footer: React.FC = () => {
             LinkedIn
           </a>
           <a
-            href="mailto:your.email@example.com"
+            href={socialLinks.facebook}
+            target="_blank"
             className="mx-2 text-gray-400 hover:text-white transition duration-200"
           >
-            Email
+            Facebook
           </a>
         </div>
       </div>
