@@ -1,25 +1,20 @@
-import Image from "next/image";
-import Headers from "./components/Header";
+import React from "react";
 import Hero from "./components/Hero";
-import ProjectCard from "./components/ProjectCard";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-export default function Home() {
+const HomePage = () => {
   return (
     <>
-      <Headers />
       <Hero />
-      <ProjectCard
-        title={"My Portfollio"}
-        description={"fagsdfasd"}
-        image={"/images/A.jpg"}
-        link={"https://noahakkad.github.io/CHE-GUEVARA-DOCUMENTARY/"}
-      />
-      <ProjectCard
-        title={"My Portfollio"}
-        description={"fagsdfasd"}
-        image={"/images/A.jpg"}
-        link={""}
-      />
+      <About />
+      <Portfolio />
+      <Contact />
+      {/* <Footer /> */}
     </>
   );
-}
+};
+
+export default HomePage;

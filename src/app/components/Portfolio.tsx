@@ -47,6 +47,8 @@ const Portfolio: React.FC = () => {
                 src={project.image}
                 alt={project.title}
                 className="w-full h-48 object-cover"
+                width={800}
+                height={500}
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">

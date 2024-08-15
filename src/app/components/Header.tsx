@@ -12,19 +12,19 @@ const Header: React.FC = () => {
 
         {/* Navigation Menu */}
         <nav className="space-x-4">
-          <Link href="#home" scroll={false} legacyBehavior>
+          <Link href="/" scroll={false} legacyBehavior>
             <a className="text-gray-700 hover:text-blue-500">Home</a>
           </Link>
-          <Link href="#about" scroll={false} legacyBehavior>
+          <Link href="../pages/About" scroll={false} legacyBehavior>
             <a className="text-gray-700 hover:text-blue-500">About</a>
           </Link>
-          <Link href="#portfolio" scroll={false} legacyBehavior>
+          <Link href="../pages/Portfolio" scroll={false} legacyBehavior>
             <a className="text-gray-700 hover:text-blue-500">Portfolio</a>
           </Link>
-          <Link href="#cv" scroll={false} legacyBehavior>
+          <Link href="../pages/CV" scroll={false} legacyBehavior>
             <a className="text-gray-700 hover:text-blue-500">CV</a>
           </Link>
-          <Link href="#contact" scroll={false} legacyBehavior>
+          <Link href="../pages/Contact" scroll={false} legacyBehavior>
             <a className="text-gray-700 hover:text-blue-500">Contact</a>
           </Link>
         </nav>
