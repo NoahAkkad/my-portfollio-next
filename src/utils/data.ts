@@ -1,9 +1,20 @@
-export const portfolioItems = [
+// Updated TypeScript Interface
+export interface PortfolioItem {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+  technologies: string[];
+}
+
+// Corrected Portfolio Items Array
+export const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
     title: "Project One",
     description: "A brief description of Project One.",
-    technologies: ["Next.js ", "TypeScript ", "Tailwind CSS "],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     image: "/images/A.jpg",
     link: "https://example.com/project-one",
   },
@@ -11,29 +22,30 @@ export const portfolioItems = [
     id: 2,
     title: "Project Two",
     description: "A brief description of Project Two.",
-    technologies: ["React ", "Node.js ", "MongoDB "],
+    technologies: ["React", "Node.js", "MongoDB"],
     image: "/images/A.jpg",
     link: "https://example.com/project-two",
   },
   {
     id: 3,
     title: "Project Three",
-    description: "A brief description of Project Two.",
-    technologies: ["React ", "Node.js ", "MongoDB "],
+    description: "A brief description of Project Three.",
+    technologies: ["React", "Node.js", "MongoDB"],
     image: "/images/A.jpg",
-    link: "https://example.com/project-two",
+    link: "https://example.com/project-three",
   },
   {
     id: 4,
     title: "Project Four",
-    description: "A brief description of Project Two.",
+    description: "A brief description of Project Four.",
     technologies: ["React", "Node.js", "MongoDB"],
     image: "/images/A.jpg",
-    link: "https://example.com/project-two",
+    link: "https://example.com/project-four",
   },
   // Add more projects here
 ];
 
+// Personal Details
 export const personalDetails = {
   name: "Noah Akkad",
   role: "Full-Stack Developer",

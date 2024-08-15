@@ -1,5 +1,5 @@
 import React from "react";
-import { personalDetails } from "../utils/data";
+import { personalDetails } from "../../utils/data";
 
 const { resumeLink } = personalDetails;
 

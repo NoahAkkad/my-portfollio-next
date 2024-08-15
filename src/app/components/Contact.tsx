@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
   const [message, setMessage] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Simulate form submission (e.g., sending data to an API)
     setIsSubmitted(true);
@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
                   required
                 />
               </div>
-              <div className="mb-6">
+              <div className="mb-4">
                 <label
                   htmlFor="message"
                   className="block text-gray-700 font-medium mb-2"
@@ -79,12 +79,14 @@ const Contact: React.FC = () => {
                   required
                 ></textarea>
               </div>
-              <button
-                type="submit"
-                className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition duration-200"
-              >
-                Send Message
-              </button>
+              <div className="text-center">
+                <button
+                  type="submit"
+                  className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600"
+                >
+                  Send Message
+                </button>
+              </div>
             </form>
           )}
         </div>

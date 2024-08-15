@@ -1,13 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { portfolioItems } from "../utils/data";
-
-interface Project {
-  title: string;
-  description: string;
-  image: string;
-  link: string;
-}
+import { portfolioItems } from "../../utils/data";
+import { PortfolioItem } from "../../utils/data";
 
 const ProjectCard: React.FC = () => {
   return (
@@ -17,14 +11,14 @@ const ProjectCard: React.FC = () => {
           My Portfolio
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {portfolioItems.map((project, index) => (
+          {portfolioItems.map((project: PortfolioItem, index: number) => (
             <div
               key={index}
               className="bg-white shadow-md rounded-lg overflow-hidden"
             >
               <Image
                 src={project.image}
-                alt={project.title}
+                alt={`Image of ${project.title}`}
                 className="w-full h-48 object-cover"
                 width={800}
                 height={500}
