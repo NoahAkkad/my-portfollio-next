@@ -34,14 +34,6 @@ export const portfolioItems: PortfolioItem[] = [
     image: "/images/A.jpg",
     link: "https://example.com/project-three",
   },
-  {
-    id: 4,
-    title: "Project Four",
-    description: "A brief description of Project Four.",
-    technologies: ["React", "Node.js", "MongoDB"],
-    image: "/images/A.jpg",
-    link: "https://example.com/project-four",
-  },
   // Add more projects here
 ];
 
